@@ -7,32 +7,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="script.js"></script>
+    <div class="kalkulator">
+        <section class="output"><div class="output-content">0</div></section>
 
-    <div id="Kalkulator">
-        <input id="display">
-
-        <div id="Keys">
-            <button onclick="clearDisplay()" class="operator-btn">C</button>
-            <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-            <button onclick="appendToDisplay('x')" class="operator-btn">x</button>
-            <button onclick="appendToDisplay('&larr;')" class="operator-btn">&larr;</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">3</button>
-            <button id="equal" onclick="calculate()" class="operator-btn">=</button>
-            <button onclick="appendToDisplay('%')">%</button>
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay(',')">,</button>
-        </div>
+        <section class="bagian-tombol">
+            <div class="tombol-tombol">
+                <button class="tombol operator">C</button>
+                <button class="tombol operator">÷</button>
+                <button class="tombol operator">×</button>
+                <button class="tombol operator">←</button>
+            </div>
+            <div class="tombol-tombol">
+                <button class="tombol">7</button>
+                <button class="tombol">8</button>
+                <button class="tombol">9</button>
+                <button class="tombol operator">-</button>
+            </div>
+            <div class="tombol-tombol">
+                <button class="tombol">4</button>
+                <button class="tombol">5</button>
+                <button class="tombol">6</button>
+                <button class="tombol operator">+</button>
+            </div>
+            <div class="tombol-tombol">
+                <button class="tombol">1</button>
+                <button class="tombol">2</button>
+                <button class="tombol">3</button>
+                <button class="tombol operator">=</button>
+            </div>
+            <div class="tombol-tombol">
+                <button class="tombol">%</button>
+                <button class="tombol">00</button>
+                <button class="tombol">0</button>
+                <button class="tombol">.</button>
+            </div>
+        </section>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
